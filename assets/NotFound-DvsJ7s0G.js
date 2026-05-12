@@ -1,9 +1,7 @@
-import React from "react";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-export default function NotFound() {
-  return React.createElement(
-    "div",
-    null,
-    "Page Not Found"
-  );
-}
+export default defineConfig({
+  plugins: [react()],
+  base: "/profkay/",
+});
